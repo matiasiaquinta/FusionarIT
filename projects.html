@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon fusionar it -->
+    <link rel="icon" href="img/favicon32x32.png" type="image/png">
+
+    <!-- animate css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- hamburger effect -->
+    <link rel="stylesheet" href="vector/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- this css -->
+    <link rel="stylesheet" href="projects.css" />
+
+    <!-- Importar la fuente Quicksand desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+
+    <!-- Swiper para carousel img -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- model 3d -->
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
+    <title>Fusionar IT</title>
+  </head>
+  <body>
+    <section class="home" id="home">    
+      <header>
+          <nav>
+            <!-- IZQUIERDA -->
+            <div class="logo">
+              <a href="index.html#home">
+                <img src="img/logoWhite.png" alt="" />
+              </a>
+            </div>
+
+            <!-- CENTRO -->
+            <div class="centernav">
+              <ul>
+                <li><a href="index.html#services" data-es="Servicios" data-en="Services">Servicios</a></li>
+                <li><a href="index.html#whyus" data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</a></li>
+                <li><a href="index.html#whyus" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="index.html#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>  
+              </ul>
+            </div>
+
+            <!-- DERECHA -->
+            <ul class="navbar-list">
+              <li>
+                <a href="#contact" class="contact-link">
+                  <i class="fa-regular fa-id-badge"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/message/C4MJBG2X5IS5A1" class="whatsapp-link" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <label class="switch">
+                  <span class="slider"></span>
+                  <button class="language-button" data-language="en">EN</button>
+                  <button class="language-button active" data-language="es">ES</button>                                      
+                </label>
+              </li>
+              <li>
+                <button class="hamburger hamburger--collapse" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <div class="hamburger-oculto">
+          <nav class="hamburger-oculto-nav">
+            <ul class="hamburger-oculto-container">
+              <div class="actions">
+                <li>
+                  <a href="#contact" class="contact-link">
+                    <i class="fa-regular fa-id-badge"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/message/C4MJBG2X5IS5A1" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <label class="switch">
+                    <span class="slider"></span>
+                    <button class="language-button" data-language="en">EN</button>
+                    <button class="language-button active" data-language="es">ES</button>                                      
+                  </label>
+                </li>
+              </div>
+              
+              <li><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+              <li><a href="#socialmedia" data-es="Contacto" data-en="Contact">Contacto</a></li>                
+            </ul>
+          </nav>
+        </div>
+        
+        <!--<div class="hamburger-oculto">
+          <div class="hamburger-oculto-container">
+              <ul class="responsiveIcons">
+                <li><a href="#contact" class="contact-link"><i class="fa-regular fa-id-badge"></i><span>Contact</span></a></li>
+                <li>
+                  <a href="https://wa.me/1162829588" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+                  </a>
+                </li>
+                <li>
+                  <label class="toggle">
+                    <input type="checkbox" id="responsiveLanguageToggle">
+                    <span class="slider"></span>
+                    <span class="labels" data-on="ES" data-off="EN"></span>
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#home" data-en="Home" data-es="Inicio">Home</a></li>
+                <li><a href="#services" data-en="Services" data-es="Servicios">Services</a></li>
+                <li><a href="#whyus" data-en="About Us" data-es="Sobre Nosotros">About Us</a></li>
+                <li><a href="#objective" data-en="Objectives" data-es="Objetivos">Objectives</a></li>
+                <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+                <li><a href="#socialmedia" data-en="Social Media" data-es="Redes Sociales">Social Media</a></li>
+              </ul>
+          </div>
+        </div>     -->     
+      </header>    
+
+      <!--<div class="divBkg">
+        <img cLass="imgBkg" src="img/newShape.png" alt="" width="100%" height="100%">
+      </div>-->
+
+      <div class="shapebkg">
+        <img src="img/marketing.jpg" alt="">
+      </div>
+
+      <div class="home-container-gral">
+        <div class="home-text">
+          <p class="home-text-title">
+            <span data-es="Explora Nuestros Proyectos" data-en="Explore Our Projects">Explora Nuestros Proyectos</span>
+          </p>
+          <!-- barra divisoria -->
+          <div class="divider"></div> 
+          <p class="secondSpan" data-es="Navega a través del portafolio de nuestra empresa y explora la diversa gama de proyectos que hemos emprendido." data-en="Navigate through our company's portfolio and explore the diverse range of projects we've undertaken.">Navega a través del portafolio de nuestra empresa y explora la diversa gama de proyectos que hemos emprendido.</p>
+          <div class="startButtonProject" onclick="window.location.href='#projects'">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <!--<div class="logoHome">
+          <img class="logoimg" src="img/logo.png" alt="home-logo" />
+          <!-- 3D objsect -->
+          <!-- This inserts the 3D object inside the aside container -->
+          <!--<model-viewer src="assets/HTC_Vive_Headset.gltf" alt="VR Headset"
+           auto-rotate camera-controls disable-zoom disable-tap
+           ar ios-src="assets/HTC_Vive_Headset.gltf">
+          </model-viewer>-->
+        <!--</div>-->
+      </div>
+    </section>
+   
+    <div class="separadorone"></div>
+
+      <!--<section class="projects-title" id="home">
+        <h1 data-en="Projects" data-es="Proyectos">Projects</h1>
+        <p data-en="Navigate through our company's portfolio and explore the diverse range of projects we've undertaken." data-es="Navega a través del portafolio de nuestra empresa y explora la diversa gama de proyectos que hemos emprendido.">Navigate through our company's portfolio and explore the diverse range of projects we've undertaken.</p>
+      </section>-->
+
+      <section class="project-container" id="projects">
+        <div class="wrapper-grid">
+          <!--#1-->
+          <div class="preview_project">
+            <div class="imgProject">
+              <img src="img/proyectos/pixie/pixie01.png" alt="">
+            </div>
+            <h1 class="nameProject">Pixie</h1>
+            <p class="descriptionProject" data-es="Sistema de gestión para el registro de equipos en taller de reparación." data-en="Management system for the registration of equipment in a repair workshop.">Sistema de gestión para el registro de equipos en taller de reparación.</p>
+            <a class="btnProject" data-popup="#popup_project1" data-es="Ver Más" data-en="See More">Ver Más</a>
+          </div>
+
+          <!--#2-->
+          <div class="preview_project">
+            <div class="imgProject">
+              <img src="img/proyectos/tiendanube/tnw01.jpg" alt="">
+            </div>
+            <h1 class="nameProject">TNWhite</h1>
+            <p class="descriptionProject" data-es="Proyecto de maquetación a través de Tienda Nube." data-en="Layout project through Tienda Nube.">Proyecto de maquetación a través de Tienda Nube.</p>
+            <a class="btnProject" data-popup="#popup_project2" data-es="Ver Más" data-en="See More">Ver Más</a>
+          </div>
+
+          <!--#3-->
+          <div class="preview_project">
+            <div class="imgProject">
+              <img src="img/proyectos/bariloche/bariloche01.jpg" alt="">
+            </div>
+            <h1 class="nameProject">Bariloche</h1>
+            <p class="descriptionProject" data-es="Creación de un software para pantalla táctil con videojuego." data-en="Development of touchscreen software with a video game.">Creación de un software para pantalla táctil con videojuego.</p>
+            <a class="btnProject" data-popup="#popup_project3" data-es="Ver Más" data-en="See More">Ver Más</a>
+          </div>
+
+          <!-- asi sucecivamente -->
+
+          <!-- cada proyecto -->
+          <div id="popup_project1" class="overlay_projects">
+            <button class="close-btn-behind" data-popup="#popup_project1"></button>
+            <div class="popup_projects">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/pixie/pixie01.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/pixie/pixie02.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/pixie/pixie03.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/pixie/pixie04.png" alt="">
+                  </div>
+                  <!-- Agregar mas slides ... -->
+                </div>
+                <!-- Flechas del carousel -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <h2>Pixie</h2>
+              <b class="close_project" data-popup="#popup_project1">&times;</a></b>
+              <div class="content_popup">
+                <p data-es="Todo el programa ha sido meticulosamente diseñado, incorporando elementos como su mapa de navegación, bocetos y wireframes, con el objetivo de presentar un producto integral al cliente. Se han añadido progresivamente botones y funcionalidades, y el programa se encuentra actualmente en su versión 1.0, listo para someterse a pruebas en el taller del cliente." data-en="The entire program has been meticulously designed, incorporating elements such as its navigation map, sketches, and wireframes, with the aim of presenting a comprehensive product to the client. Buttons and functionalities have been progressively added, and the program is currently in its version 1.0, ready to undergo testing in the client's workshop.">Todo el programa ha sido meticulosamente diseñado, incorporando elementos como su mapa de navegación, bocetos y wireframes, con el objetivo de presentar un producto integral al cliente. Se han añadido progresivamente botones y funcionalidades, y el programa se encuentra actualmente en su versión 1.0, listo para someterse a pruebas en el taller del cliente.</p>
+                <br>
+                <p data-es="Adicionalmente, el sistema incluye una base de datos integral para el registro tanto de los equipos que ingresan al taller como de los usuarios asociados a estos dispositivos. Esta información se almacena de manera eficiente, permitiendo un registro sin problemas de registros en instancias futuras al traer otro equipo, simplificando significativamente el proceso. Entre las características adicionales, se proporciona un tiempo estimado de entrega, junto con diversas funcionalidades que permiten a los usuarios monitorear en tiempo real el progreso de sus equipos." data-en="Additionally, the system includes a comprehensive database for the registration of both the equipment entering the workshop and the users associated with these devices. This information is stored efficiently, allowing for seamless registration of records in future instances when bringing in another piece of equipment, significantly streamlining the process. Among additional features, an estimated delivery time is provided, along with various functionalities enabling users to monitor the real-time progress of their equipment.">Adicionalmente, el sistema incluye una base de datos integral para el registro tanto de los equipos que ingresan al taller como de los usuarios asociados a estos dispositivos. Esta información se almacena de manera eficiente, permitiendo un registro sin problemas de registros en instancias futuras al traer otro equipo, simplificando significativamente el proceso. Entre las características adicionales, se proporciona un tiempo estimado de entrega, junto con diversas funcionalidades que permiten a los usuarios monitorear en tiempo real el progreso de sus equipos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup_project2" class="overlay_projects">
+            <button class="close-btn-behind" data-popup="#popup_project2"></button>
+            <div class="popup_projects">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/tiendanube/tnw01.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/tiendanube/tnw02.jpg" alt="">
+                  </div>
+                  <!-- Agregar mas slides ... -->
+                </div>
+                <!-- Flechas del carousel -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <h2>"The New White co"</h2>
+              <a class="close_project" data-popup="#popup_project2">&times;</a></b>
+              <div class="content_popup">
+                <p data-es="Este proyecto demandó extensas interacciones y diálogos con el cliente, quien expresó detalladamente sus requerimientos. Implementamos procesos rigurosos, que abarcaron correcciones, la configuración de productos con sus respectivos precios, destacando productos, gestionando ofertas y llevando a cabo la construcción integral de la página mediante Tienda Nube." data-en="This project involved extensive interactions and discussions with the client, who provided detailed specifications. We implemented rigorous processes, including corrections, setting up products with their respective prices, highlighting featured items, managing promotions, and carrying out the comprehensive construction of the page through Tienda Nube.">Este proyecto demandó extensas interacciones y diálogos con el cliente, quien expresó detalladamente sus requerimientos. Implementamos procesos rigurosos, que abarcaron correcciones, la configuración de productos con sus respectivos precios, destacando productos, gestionando ofertas y llevando a cabo la construcción integral de la página mediante Tienda Nube.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="popup_project3" class="overlay_projects">
+            <button class="close-btn-behind" data-popup="#popup_project3"></button>
+            <div class="popup_projects">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/bariloche/bariloche01.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/bariloche/bariloche02.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/bariloche/bariloche03.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/bariloche/bariloche04.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/proyectos/bariloche/bariloche05.jpg" alt="">
+                  </div>
+                  <!-- Agregar mas slides ... -->
+                </div>
+                <!-- Flechas del carousel -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <h2 data-en="Bariloche Touchscreen" data-es="Bariloche Pantalla Tactil">Bariloche Touchscreen</h2>
+              <a class="close_project" data-popup="#popup_project3">&times;</a></b>
+              <div class="content_popup">
+                <p data-es="Este proyecto fue concebido para un stand en la feria rural, donde desarrollamos un programa de visualización de diversas áreas de Bariloche mediante una pantalla táctil. Los visitantes tenían la libertad de seleccionar las áreas que deseaban explorar. Trabajamos bajo presión, ya que nos contactaron pocos días antes del evento, llevando a cabo reuniones intensivas y diálogos con el equipo de Ideal Marketing." data-en="This project was designed for a booth at the rural fair, where we created a visualization program for various parts of Bariloche using a touchscreen. Visitors had the freedom to select the areas they wanted to explore. We worked under tight deadlines, as they contacted us just a few days before the event, leading to intense meetings and discussions with the Ideal Marketing team.">Este proyecto fue concebido para un stand en la feria rural, donde desarrollamos un programa de visualización de diversas áreas de Bariloche mediante una pantalla táctil. Los visitantes tenían la libertad de seleccionar las áreas que deseaban explorar. Trabajamos bajo presión, ya que nos contactaron pocos días antes del evento, llevando a cabo reuniones intensivas y diálogos con el equipo de Ideal Marketing.</p>
+                <br>
+                <p data-es="Además, implementamos un juego de rompecabezas con fichas temáticas según la ubicación elegida por el usuario. Si lograban completarlo, recibían un premio; de lo contrario, tenían la oportunidad de intentarlo nuevamente. Todas las piezas fueron diseñadas específicamente para una pantalla táctil vertical, se incorporaron sonidos apropiados y se configuró todo para garantizar un funcionamiento óptimo." data-en="Additionally, we implemented a puzzle game with themed pieces based on the user's chosen location. If they successfully completed it, they received a prize; otherwise, they had the opportunity to try again. All pieces were specifically designed for a vertical touchscreen, appropriate sounds were incorporated, and everything was configured to ensure optimal functionality.">Además, implementamos un juego de rompecabezas con fichas temáticas según la ubicación elegida por el usuario. Si lograban completarlo, recibían un premio; de lo contrario, tenían la oportunidad de intentarlo nuevamente. Todas las piezas fueron diseñadas específicamente para una pantalla táctil vertical, se incorporaron sonidos apropiados y se configuró todo para garantizar un funcionamiento óptimo.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- asi sucecivamente -->
+
+          <!-- mas cards -->
+          <!-- mas cards -->
+          <!-- mas cards -->
+
+
+
+
+        </div> <!--fin general-->
+       
+        </div>
+      </section>
+
+
+
+      <section class="footer" id="socialmedia">
+        <div class="footerUno">
+          <img src="img/logo.png" alt="home-logo" />
+          <h1>Fusionar <span>iT</span></h1>
+          <div class="socialMedia">
+            <a href="https://www.instagram.com/fusionarit/" target="_blank"><img src="img/instagram.png" alt=""></a>
+          </div>
+          <div class="socialMedia">
+            <a href="https://www.linkedin.com/company/fusionar-it/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+          </div>
+          <div class="socialMedia">
+            <a href="mailto:contacto@fusionarit.com.ar">
+              <img src="img/mail.png" alt="Enviar correo">
+            </a>
+          </div>
+        </div>
+
+        <div class="footerDos">
+          <p><a href="#home" data-es="Inicio" data-en="Home">Inicio</a></p>
+          <p><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></p>          
+        </div>        
+
+        <div class="footerTres">
+          <span data-es="Derechos de autor 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT" data-en="Copyright 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT">Derechos de autor 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT</span>
+        </div>    
+          
+      </section>
+  
+  <!-- GSAP SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js" integrity="sha512-+35N1KBHwTDnFOBSqO2nm/qsf5okaS74sUZu/rT/wlvuAfJ1hrAoGlWZip2l1LHB1q2i8B2k84Pb/NrC38bv8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- animate css -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- index script -->
+  <script defer src="main.js"></script>
+
+  <!-- this script -->
+  <script defer src="projects.js"></script>
+
+  <!-- gsap animation -->
+  <script defer src="gsap-index.js"></script>
+
+  <!-- Swiper para carousel img -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+
+
+  
+</body>
+</html>

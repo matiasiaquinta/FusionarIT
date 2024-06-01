@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon fusionar it -->
+    <link rel="icon" href="img/favicon32x32.png" type="image/png">
+
+    <!-- animate css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- hamburger effect -->
+    <link rel="stylesheet" href="vector/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- this css -->
+    <link rel="stylesheet" href="aboutus.css" />
+
+    <!-- material icons para el carousel -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- flecha icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+
+    <!-- Importar la fuente Quicksand desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+  
+
+    <!-- model 3d -->
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
+    <title>Fusionar IT</title>
+  </head>
+  <body>
+    <section class="home" id="home">    
+      <header>
+          <nav>
+            <!-- IZQUIERDA -->
+            <div class="logo">
+              <a href="index.html#home">
+                <img src="img/logoWhite.png" alt="" />
+              </a>
+            </div>
+
+            <!-- CENTRO -->
+            <div class="centernav">
+              <ul>
+                <li><a href="index.html#services" data-es="Servicios" data-en="Services">Servicios</a></li>
+                <li><a href="index.html#whyus" data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</a></li>
+                <li><a href="index.html#whyus" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="index.html#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>                
+              </ul>
+            </div>
+
+            <!-- DERECHA -->
+            <ul class="navbar-list">
+              <li>
+                <a href="#contact" class="contact-link">
+                  <i class="fa-regular fa-id-badge"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/message/C4MJBG2X5IS5A1" class="whatsapp-link" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <label class="switch">
+                  <span class="slider"></span>
+                  <button class="language-button" data-language="en">EN</button>
+                  <button class="language-button active" data-language="es">ES</button>                                      
+                </label>
+              </li>
+              <li>
+                <button class="hamburger hamburger--collapse" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <div class="hamburger-oculto">
+          <nav class="hamburger-oculto-nav">
+            <ul class="hamburger-oculto-container">
+              <div class="actions">
+                <li>
+                  <a href="#contact" class="contact-link">
+                    <i class="fa-regular fa-id-badge"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/message/C4MJBG2X5IS5A1" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <label class="switch">
+                    <span class="slider"></span>
+                    <button class="language-button" data-language="en">EN</button>
+                    <button class="language-button active" data-language="es">ES</button>                                      
+                  </label>
+                </li>
+              </div>
+              
+              <li><a href="#aboutus" data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</a></li>
+              <li><a href="#socialmedia" data-es="Contacto" data-en="Contact">Contacto</a></li>                
+            </ul>
+          </nav>
+        </div>
+        
+        <!--<div class="hamburger-oculto">
+          <div class="hamburger-oculto-container">
+              <ul class="responsiveIcons">
+                <li><a href="#contact" class="contact-link"><i class="fa-regular fa-id-badge"></i><span>Contact</span></a></li>
+                <li>
+                  <a href="https://wa.me/1162829588" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+                  </a>
+                </li>
+                <li>
+                  <label class="toggle">
+                    <input type="checkbox" id="responsiveLanguageToggle">
+                    <span class="slider"></span>
+                    <span class="labels" data-on="ES" data-off="EN"></span>
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#home" data-en="Home" data-es="Inicio">Home</a></li>
+                <li><a href="#services" data-en="Services" data-es="Servicios">Services</a></li>
+                <li><a href="#whyus" data-en="About Us" data-es="Sobre Nosotros">About Us</a></li>
+                <li><a href="#objective" data-en="Objectives" data-es="Objetivos">Objectives</a></li>
+                <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+                <li><a href="#socialmedia" data-en="Social Media" data-es="Redes Sociales">Social Media</a></li>
+              </ul>
+          </div>
+        </div>     -->     
+      </header> 
+      
+      <div class="shapebkg">
+        <img src="img/aboutUs.jpg" alt="">
+      </div>
+
+      <div class="home-container-gral">
+        <div class="home-text">
+          <p class="home-text-title">
+            <span data-es="Un equipo con ingenio y creatividad" data-en="A team with ingenuity and creativity">Un equipo con ingenio y creatividad</span>
+          </p>
+          <!-- barra divisoria -->
+          <div class="divider"></div> 
+          <p class="secondSpan" data-es="Sabemos que en la actualidad, la digitalización es fundamental para impulsar tu negocio hacia el éxito." data-en="We know that nowadays, digitalization is essential to drive your business towards success.">Sabemos que en la actualidad, la digitalización es fundamental para impulsar tu negocio hacia el éxito.</p>
+          <div class="startButtonProject" onclick="window.location.href='#aboutus'">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <!--<div class="logoHome">
+          <img class="logoimg" src="img/logo.png" alt="home-logo" />
+          <!-- 3D objsect -->
+          <!-- This inserts the 3D object inside the aside container -->
+          <!--<model-viewer src="assets/HTC_Vive_Headset.gltf" alt="VR Headset"
+           auto-rotate camera-controls disable-zoom disable-tap
+           ar ios-src="assets/HTC_Vive_Headset.gltf">
+          </model-viewer>-->
+        <!--</div>-->
+      </div>
+      </section>
+
+      <div class="separadorone"></div>
+
+      <section class="aboutus-container" id="aboutus">
+        <div class="div-general">
+          <div class="div-text">
+            <span data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</span>
+            <p data-es="Desde nuestros inicios, hemos trabajado incansablemente para democratizar el acceso a la información, permitiendo que las personas conviertan sus ideas en proyectos exitosos. Nuestra cultura inclusiva y colaborativa fomenta el aprendizaje continuo y la creatividad." data-en="Since our inception, we have worked tirelessly to democratize access to information, enabling individuals to turn their ideas into successful projects. Our inclusive and collaborative culture fosters continuous learning and creativity.">Desde nuestros inicios, hemos trabajado incansablemente para democratizar el acceso a la información, permitiendo que las personas conviertan sus ideas en proyectos exitosos. Nuestra cultura inclusiva y colaborativa fomenta el aprendizaje continuo y la creatividad.</p>
+            <br>
+            <p data-es="Nuestro enfoque principal es la digitalización de proyectos e ideas, con el objetivo de impulsar las ventas y el crecimiento de nuestros clientes a través de soluciones personalizadas y el uso estratégico de los datos." data-en="Our primary focus is on the digitization of projects and ideas, aiming to boost our clients' sales and growth through customized solutions and strategic use of data.">Nuestro enfoque principal es la digitalización de proyectos e ideas, con el objetivo de impulsar las ventas y el crecimiento de nuestros clientes a través de soluciones personalizadas y el uso estratégico de los datos.</p>           
+            <br>
+            <p data-es="Nos enorgullece ser un equipo interdisciplinario de amigos y colegas apasionados, con sede en Argentina y dedicados al éxito de nuestros clientes. Estamos aquí para ofrecer innovación y tecnología que impulse el desarrollo y la prosperidad de nuestros socios comerciales." data-en="We take pride in being an interdisciplinary team of passionate friends and colleagues, based in Argentina and committed to the success of our clients. We are here to provide innovation and technology that drives the development and prosperity of our business partners.">Nos enorgullece ser un equipo interdisciplinario de amigos y colegas apasionados, con sede en Argentina y dedicados al éxito de nuestros clientes. Estamos aquí para ofrecer innovación y tecnología que impulse el desarrollo y la prosperidad de nuestros socios comerciales.</p>
+          </div>
+
+          <div class="div-img">
+            <img src="img/hacer.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="second-frase" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100">
+          <p data-es="La tecnología avanza a un ritmo tan rápido que, al final del día, si no estás innovando, te estás quedando atrás - Steve Jobs" data-en="Technology moves at such a rapid pace that, at the end of the day, if you're not innovating, you're falling behind - Steve Jobs">La tecnología avanza a un ritmo tan rápido que, al final del día, si no estás innovando, te estás quedando atrás - <b>Steve Jobs</b></p>
+        </div>
+      </section>
+<!--
+      <section class="third-general" id="team">
+        <div class="slider-container" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
+          <div class="slider-wrap">
+            <div id="slider" class="slider">
+              <div class="slide">
+                <img src="img/matiasIaquinta.jpg" alt="Matias Iaquinta">
+              </div>
+              <div class="slide">
+                <img src="img/francoSayago.jpg" alt="Franco Sayago">
+              </div>
+              <div class="slide">
+                <img src="img/daiSantillan.jpg" alt="Daiana Santillan">
+              </div>              
+            </div>
+          </div>
+          <div class="btn-wrap">
+            <i id="prev" class="material-icons btn">&#xE5CB;</i>
+            <i id="next" class="material-icons btn">&#xE5CC;</i>
+          </div>
+        </div>
+      </section>
+-->
+    <!--
+      <section class="third-general" id="team">
+        <div class="card_person"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
+          <img src="img/matiasIaquinta.jpg" alt="Matias Iaquinta">
+          <h2 class="card_person_title">Matias <span>Iaquinta</span></h2>
+          <p data-en="I specialize in building amazing websites and ensuring that everything runs seamlessly. I work hand in hand with my teammate, who has connections with an amazing design team, to make our projects visually stunning and technologically unstoppable. We're here to make your online presence unique and fantastic!" data-es="Me dedico a construir sitios web increíbles y a asegurarme de que todo funcione sin problemas. Trabajo mano a mano con mi compañero de equipo, quien tiene conexiones con un equipo de diseño alucinante, para que nuestros proyectos sean visualmente impactantes y tecnológicamente imparables. ¡Estamos aquí para hacer que tu presencia en línea sea única y fantástica!">I specialize in building amazing websites and ensuring that everything runs seamlessly. I work hand in hand with my teammate, who has connections with an amazing design team, to make our projects visually stunning and technologically unstoppable. We're here to make your online presence unique and fantastic!</p>
+        </div>
+        <div class="card_person" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200">
+          <img src="img/francoSayago.jpg" alt="Franco Sayago">
+          <h2 class="card_person_title">Franco <span>Sayago</span></h2>
+          <p data-en="My job involves keeping our clients happy and our designs stylish. I handle communication with our clients and have access to a high-quality team of designers. Working hand in hand with my colleague, we transform ideas into digital experiences that simply dazzle. Together, we create magic in the digital world and turn projects into something amazing." data-es="Mi trabajo consiste en mantener a nuestros clientes felices y nuestros diseños con estilo. Manejo la comunicación con nuestros clientes y tengo acceso a un equipo de diseñadores que son de gran calidad. Trabajo codo a codo con mi compañero, para transformar ideas en experiencias digitales que simplemente deslumbran. Juntos, creamos magia en el mundo digital y convertimos proyectos en algo asombroso.">My job involves keeping our clients happy and our designs stylish. I handle communication with our clients and have access to a high-quality team of designers. Working hand in hand with my colleague, we transform ideas into digital experiences that simply dazzle. Together, we create magic in the digital world and turn projects into something amazing.</p>
+        </div>
+        <div class="card_person"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="400">
+          <img src="img/daiSantillan.jpg" alt="Matias Iaquinta">
+          <h2 class="card_person_title">Dai <span>Santillan</span></h2>
+          <p data-en="I specialize in creating captivating social media strategies and ensuring that each campaign stands out with creativity. Collaborating closely with my teammates, we create visually stunning content that not only attracts but also leaves a lasting impression. Whether cultivating a strong online presence or orchestrating marketing magic, we are here to make your brand shine in the digital realm." data-es="Me especializo en crear estrategias cautivadoras en redes sociales y garantizar que cada campaña destaque con creatividad. Colaborando estrechamente con mis compañeros de equipo, creamos contenido visualmente impactante que no solo atrae, sino que también deja una impresión duradera. Ya sea cultivando una fuerte presencia en línea o orquestando magia de marketing, estamos aquí para hacer brillar tu marca en el ámbito digital.">I specialize in creating captivating social media strategies and ensuring that each campaign stands out with creativity. Collaborating closely with my teammates, we create visually stunning content that not only attracts but also leaves a lasting impression. Whether cultivating a strong online presence or orchestrating marketing magic, we are here to make your brand shine in the digital realm.</p>
+        </div>
+      </section>
+      -->
+     
+
+      <section class="footer" id="socialmedia">
+        <div class="borrarFooter"></div>
+        <div class="footerUno">
+          <img src="img/logo.png" alt="home-logo" />
+          <h1>Fusionar <span>iT</span></h1>
+          <div class="socialMedia">
+            <a href="https://www.instagram.com/fusionarit/" target="_blank"><img src="img/instagram.png" alt=""></a>
+          </div>
+          <div class="socialMedia">
+            <a href="https://www.linkedin.com/company/fusionar-it/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+          </div>
+          <div class="socialMedia">
+            <a href="mailto:contacto@fusionarit.com.ar">
+              <img src="img/mail.png" alt="Enviar correo">
+            </a>
+          </div>
+        </div>
+
+        <div class="footerDos">
+          <p><a href="#home" data-es="Inicio" data-en="Home">Inicio</a></p>
+          <p><a href="#about" data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</a></p>
+          <p><a href="#team" data-es="Equipo" data-en="Team">Equipo</a></p>          
+        </div>
+        
+
+        <div class="footerTres">
+          <span data-en="Copyright 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT" data-es="Derechos de autor 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT">Copyright 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT</span>
+        </div>   
+          
+      </section>
+  
+  <!-- GSAP SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js" integrity="sha512-+35N1KBHwTDnFOBSqO2nm/qsf5okaS74sUZu/rT/wlvuAfJ1hrAoGlWZip2l1LHB1q2i8B2k84Pb/NrC38bv8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- animate css -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- our script -->
+  <script defer src="main.js"></script>
+
+  <!-- swup 
+  <script src="https://unpkg.com/swup@4"></script>
+  <script>
+    const swup = new Swup();
+  </script>
+  -->
+
+  <script>
+
+    /* carousel */
+//    var prev = document.getElementById('prev');
+//    var next = document.getElementById('next');
+//    var slider = document.getElementById('slider');
+//    var total = 0, step = 100;
+//
+//    prev.addEventListener('click', slide);
+//    next.addEventListener('click', slide);
+//
+//    function slide() {
+//        if (this.getAttribute('id') == 'prev') {
+//            if (total == 0) {
+//                total = -200; // Ajusta esto para que coincida con el último slide
+//                slider.style.left = total + '%';
+//            } else {
+//                total += step;
+//                slider.style.left = total + '%';
+//            }
+//        } else { // Si se presiona "next"
+//            if (total == -200) { // Ajusta esto para que vuelva al primer slide
+//                total = 0;
+//                slider.style.left = total + '%';
+//            } else {
+//                total -= step;
+//                slider.style.left = total + '%';
+//            }
+//        }
+//    }
+
+
+  </script>
+
+
+</body>
+</html>

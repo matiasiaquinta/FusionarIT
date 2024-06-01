@@ -1,0 +1,281 @@
+/* ABOUT US */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+/* divider */
+.dividerProject{
+    width: 60%;
+    height: 3px;
+    margin-bottom: 1rem;
+    background-color: var(--color-secondary);
+}
+
+.secondSpanProject{
+  width: 80%;
+}
+.startButtonProject{
+  position: absolute;
+  bottom: 10%;
+  background-color: var(--color-secondary);
+  padding: 10px 15px 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: transform 0.3s;
+  color: black;
+}
+.startButtonProject:hover{
+  transform: scale(1.3);
+}
+
+.aboutus-container {
+  background: linear-gradient(to bottom, #0c4273, #000a12);
+  position: relative;
+  padding: 130px 0 200px 0;
+}
+.div-general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+}
+.div-text {
+  flex: 1;
+  margin: 30px;
+}
+.div-text span{
+    font-size: 3.3em;
+    font-weight: bold;
+    color: white;
+}
+.div-text p{
+    font-size: 1.1em;
+    font-weight: 100;
+    width: 90%;
+}
+.div-img {
+  flex: 1;
+  margin: 30px;
+}
+.div-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.about-general {
+    height: 70vh;
+    width: 90%;
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    padding: 20px; /* Márgenes internos */
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    overflow: hidden; /* Limpiar el flujo de elementos hijos flotantes */
+    display: flex; /* Utilizar flexbox */
+    justify-content: space-between; /* Distribuir los elementos a los lados */
+    gap: 60px;
+}
+
+.about-title {
+    text-align: center;
+    width: 50%;
+}
+.about-title h1 span{
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+.about-title img {
+    max-width: 100%; /* Hacer que la imagen sea responsive */
+    width: 40%;
+    height: auto; /* Evitar distorsiones en la imagen */
+    margin: 0 auto;
+}
+.about-title p{
+    margin-top: 0;
+}
+
+.about-description {
+    width: 48%;
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+.about-description p{
+    text-align: justify;
+}
+
+
+.second-frase{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+.second-frase p{
+    text-align: center;
+    color: var(--color-white);
+    font-size: 2em;
+}
+
+.third-general {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0; /* 60px arriba y abajo y 0 izquierda derecha */
+    max-width: 1300px;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+/*
+.card_person {
+    margin: 50px 0px; 
+    border-radius: 10px;
+    padding-bottom: 3em;
+    flex-basis: 350px;
+    max-width: 500px;
+    flex-grow: 1;
+}
+.card_person img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.card_person_title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.card_person_title span{
+    background-color: white;
+    padding: 5px;
+    color: black;
+}
+*/
+
+
+/* carousel */
+.slider-container{
+    position: relative;
+    max-width: 35%;
+    width: 90%;
+    height: 35%;
+
+    box-shadow: 0 0 15px rgba(0,0,0,.35);
+    margin-bottom: 100px; /* esta mal */
+}
+.slider-wrap
+{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider
+{
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 500%;
+  transition: 300ms ease-in-out;
+}
+
+.slide
+{
+  float: left;
+  height: 100%;
+  width: 20%;
+  background-size: cover;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.btn
+{
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFF;
+  background: #2C2C2C;
+  cursor: pointer;
+  user-select: none;
+  transition: background 150ms ease-in-out;
+}
+
+.btn:first-child { left: -.5em;  }
+.btn:last-child  { right: -.5em; }
+
+.btn:hover  { background: #131313; }
+.btn:active
+{
+  transform: scale(.97);
+  background: #000;
+}
+
+@media(max-width: 950px)
+{
+  .slide {background-position: center;}
+  .slider-container {width: 100%; height: 100%; max-width: 60%;}
+}
+
+
+
+/* MEDIA QUERIES */
+/* TELEFONO */
+@media only screen and (max-width: 956px){
+
+    .about-general{
+        display: table;
+    }
+    .about-title{
+        margin:50px 0 30px 0;
+        width: 100%;
+    }
+    .about-description{
+        width: 100%;
+    }
+
+
+    .div-general{
+      display: block;
+    }
+    .div-text p{
+      width: 100%;
+    }
+    .div-img{
+      text-align: center;
+    }
+    .second-frase{
+      width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 575px){
+}
+

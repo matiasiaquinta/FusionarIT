@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon fusionar it -->
+    <link rel="icon" href="img/favicon32x32.png" type="image/png">
+
+    <!-- animate css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- hamburger effect -->
+    <link rel="stylesheet" href="vector/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+
+    <!-- Importar la fuente Quicksand desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+  
+    <!-- this css -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- model 3d -->
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
+    <title>Fusionar IT</title>
+  </head>
+  <body>
+      <section class="home" id="home">    
+        <header>
+            <nav>
+              <!-- IZQUIERDA -->
+              <div class="logo">
+                <a href="#home">
+                  <img src="img/logoWhite.png" alt="" />
+                </a>
+              </div>
+
+              <!-- CENTRO -->
+              <div class="centernav">
+                <ul>
+                  <li><a href="#services" data-es="Servicios" data-en="Services">Servicios</a></li>
+                  <li><a href="#whyus" data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</a></li>
+                  <li><a href="#whyus" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                  <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>                
+                </ul>
+              </div>
+
+              <!-- DERECHA -->
+              <ul class="navbar-list">
+                <li>
+                  <a href="#contact" class="contact-link">
+                    <i class="fa-regular fa-id-badge"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/message/C4MJBG2X5IS5A1" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <label class="switch">
+                    <span class="slider"></span>
+                    <button class="language-button" data-language="en">EN</button>
+                    <button class="language-button active" data-language="es">ES</button>                                      
+                  </label>
+                </li>
+                <li>
+                  <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+          <!-- Sidebar Navigation -->
+        <div class="hamburger-oculto">
+          <nav class="hamburger-oculto-nav">
+            <ul class="hamburger-oculto-container">
+              <div class="actions">
+                <li>
+                  <a href="#contact" class="contact-link">
+                    <i class="fa-regular fa-id-badge"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/message/C4MJBG2X5IS5A1" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li>
+                  <label class="switch">
+                    <span class="slider"></span>
+                    <button class="language-button" data-language="en">EN</button>
+                    <button class="language-button active" data-language="es">ES</button>                                      
+                  </label>
+                </li>
+              </div>
+              <li><a href="#services" data-es="Servicios" data-en="Services">Servicios</a></li>
+              <li><a href="#whyus" data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</a></li>
+              <li><a href="#whyus" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+              <li><a href="#socialmedia" data-es="Contacto" data-en="Contact">Contacto</a></li>                
+            </ul>
+          </nav>
+        </div>
+          
+          <!--<div class="hamburger-oculto">
+            <div class="hamburger-oculto-container">
+                <ul class="responsiveIcons">
+                  <li><a href="#contact" class="contact-link"><i class="fa-regular fa-id-badge"></i><span>Contact</span></a></li>
+                  <li>
+                    <a href="https://wa.me/1162829588" class="whatsapp-link" target="_blank">
+                      <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+                    </a>
+                  </li>
+                  <li>
+                    <label class="toggle">
+                      <input type="checkbox" id="responsiveLanguageToggle">
+                      <span class="slider"></span>
+                      <span class="labels" data-on="ES" data-off="EN"></span>
+                    </label>
+                  </li>
+                </ul>
+                <ul>
+                  <li><a href="#home" data-en="Home" data-es="Inicio">Home</a></li>
+                  <li><a href="#services" data-en="Services" data-es="Servicios">Services</a></li>
+                  <li><a href="#whyus" data-en="About Us" data-es="Sobre Nosotros">About Us</a></li>
+                  <li><a href="#objective" data-en="Objectives" data-es="Objetivos">Objectives</a></li>
+                  <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+                  <li><a href="#socialmedia" data-en="Social Media" data-es="Redes Sociales">Social Media</a></li>
+                </ul>
+            </div>
+          </div>          
+        </header>    -->
+
+        <!--<div class="divBkg">
+          <img cLass="imgBkg" src="img/newShape.png" alt="" width="100%" height="100%">
+        </div>-->
+
+        <div class="shapebkg">
+          <img src="img/notebookWork.jpg" alt="">
+        </div>
+
+        <div class="home-container-gral">
+          <div class="home-text">
+            <p class="firstSpan" data-es="Servicio Profesional" data-en="Professional Service">Servicio Profesional</p>
+            <p class="home-text-title">
+              <span data-es="Soluciones" data-en="Digital">Soluciones</span>&nbsp;&nbsp;&nbsp;
+              <span data-es="Digitales" data-en="Solutions">Digitales</span>              
+            </p>
+            <!-- barra divisoria -->
+            <div class="divider"></div> 
+            <p class="secondSpan" data-es="A través de nuestro enfoque de diseño innovador, damos vida a tus ideas, asegurando el logro exitoso de tus objetivos. Nos enorgullece nuestra capacidad para transformar tu visión en resultados tangibles, haciendo realidad tus metas." data-en="Through our innovative design approach, we bring your ideas to life, ensuring the successful accomplishment of your objectives. We take pride in our ability to transform your vision into tangible results, making your goals a reality.">A través de nuestro enfoque de diseño innovador, damos vida a tus ideas, asegurando el logro exitoso de tus objetivos. Nos enorgullece nuestra capacidad para transformar tu visión en resultados tangibles, haciendo realidad tus metas.</p>
+            <div class="startButton" onclick="window.location.href='#frase'">
+              <p data-es="Ver más" data-en="View More!">Ver más</p>
+            </div>
+          </div>
+          <!--<div class="logoHome">
+            <img class="logoimg" src="img/logo.png" alt="home-logo" />
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <!--<model-viewer src="assets/HTC_Vive_Headset.gltf" alt="VR Headset"
+             auto-rotate camera-controls disable-zoom disable-tap
+             ar ios-src="assets/HTC_Vive_Headset.gltf">
+            </model-viewer>-->
+          <!--</div>-->
+        </div>
+      </section>
+     
+      <div class="separadorone"></div>
+
+      <section class="services" id="frase">
+        <div class="subtitleServices">
+          <p data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50" data-es="¡Las innovaciones comienzan aquí!" data-en="Innovations start here!">¡Las innovaciones comienzan aquí!</p>
+          <span data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250" data-es="Nuestro objetivo es ofrecerte soluciones de calidad. Queremos mejorar tu negocio." data-en="Our goal is to offer you quality solutions. We want to improve your business.">Nuestro objetivo es ofrecerte soluciones de calidad. Queremos mejorar tu negocio.</span>
+        </div>        
+        
+        <div class="cardsUs" id="services">
+
+          <article class="card_item card_one">
+            <div class="card_content" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
+              <figure class="card_picture">
+                <img src="img/marketing.jpg" alt="" class="card_imgOne">
+              </figure>
+              <div class="card_text">
+                <h2 class="card_title" data-es="MARKETING Y PUBLICIDAD" data-en="MARKETING & ADVERTISING">MARKETING Y PUBLICIDAD</h2>
+                <p class="card_paragraph" data-es="Transformamos tu visión en resultados tangibles a través de soluciones creativas de marketing y publicidad, amplificando el impacto de tu marca en el mercado." data-en="We transform your vision into tangible results through creative marketing and advertising solutions, amplifying the impact of your brand in the market.">Transformamos tu visión en resultados tangibles a través de soluciones creativas de marketing y publicidad, amplificando el impacto de tu marca en el mercado.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card_item card_two">
+            <div class="card_content" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+              <figure class="card_picture">
+                <img src="img/diseñoweb.jpg" alt="" class="card_imgTwo">
+              </figure>
+              <div class="card_text">
+                <h2 class="card_title" data-es="DISEÑO WEB" data-en="WEB DESIGN">DISEÑO WEB</h2>
+                <p class="card_paragraph" data-es="Damos vida a tus ideas con un diseño web innovador, creando soluciones visualmente impresionantes y fáciles de usar que elevan tu presencia en línea y generan éxito." data-en="We bring your ideas to life with innovative web design, crafting visually stunning and user-friendly solutions that elevate your online presence and drive success.">Damos vida a tus ideas con un diseño web innovador, creando soluciones visualmente impresionantes y fáciles de usar que elevan tu presencia en línea y generan éxito.</p>
+              </div>              
+            </div>
+          </article>
+
+          <article class="card_item card_three">
+            <div class="card_content" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="200">
+              <figure class="card_picture">
+                <img src="img/soluciones.jpg" alt="" class="card_imgThree">
+              </figure>
+              <div class="card_text">
+                <h2 class="card_title" data-es="SOLUCIONES PERSONALIZADAS" data-en="CUSTOMIZE SOLUTIONS">SOLUCIONES PERSONALIZADAS</h2>
+                <p class="card_paragraph" data-es="Nos especializamos en crear y ofrecer soluciones personalizadas, asegurando que cada aspecto esté adaptado para satisfacer tus necesidades únicas. Nuestro compromiso de brindar servicios personalizados destaca tu éxito en un mundo de soluciones personalizadas." data-en="We specialize in crafting and delivering personalized solutions, ensuring that every aspect is customized to meet your unique needs. Our commitment to providing personalized services sets your success apart in a world of customized solutions.">Nos especializamos en crear y ofrecer soluciones personalizadas, asegurando que cada aspecto esté adaptado para satisfacer tus necesidades únicas. Nuestro compromiso de brindar servicios personalizados destaca tu éxito en un mundo de soluciones personalizadas.</p>
+              </div>              
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="separadortwo"></div>
+
+      <div class="separadortwotwo"></div>
+
+      <section class="moreInfo" id="whyus">
+        <div class="moreInfo_content" >
+
+          <div class="UsText">
+            <span data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-delay="500" data-es="¿Por Qué Nosotros?" data-en="Why Us?">¿Por Qué Nosotros?</span>
+            <p data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-delay="550" data-es="Porque no solo ofrecemos servicios, creamos experiencias. Cada proyecto es una oportunidad para redefinir la excelencia mediante la combinación de creatividad e innovación. Te invitamos a conocernos más." data-en="Because we don't just offer services, we create experiences. Every project is a chance to redefine excellence by blending creativity and innovation. We invite you to learn more about us.">Porque no solo ofrecemos servicios, creamos experiencias. Cada proyecto es una oportunidad para redefinir la excelencia mediante la combinación de creatividad e innovación. Te invitamos a conocernos más.</p>
+          </div>          
+
+          <div class="UsButtons">
+            <div class="projectsDiv"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1050">
+              <a href="projects.html">
+                <img src="img/notebookWork.jpg" alt="">
+                <h2 class="txtProjects" data-es="PROYECTOS" data-en="PROJECTS">PROYECTOS</h2>
+              </a>
+            </div>   
+            <div class="aboutUsDiv"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="1150">
+              <a href="aboutus.html">
+                <img src="img/aboutUs.jpg" alt="">
+                <h2 class="txtAbout" data-es="SOBRE NOSOTROS" data-en="ABOUT US">SOBRE NOSOTROS</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separadorthree"></div>
+
+      <div class="separadorfour"></div>
+      
+      <section class="extras" id="objective">
+        <div class="extras_content"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="50">
+          <div class="card_extra">
+            <h1 data-es="EXPLORAR" data-en="EXPLORE">EXPLORAR</h1>
+            <div class="circle">
+              <img src="img/explore.png" alt="">
+            </div>
+            <p data-es="Nos tomamos el tiempo para entender el contexto, de modo que las decisiones se tomen desde un lugar de evidencia en lugar de suposición." data-en="We take the time to understand the context so decisions can be made from a place of evidence rather than assumption.">Nos tomamos el tiempo para entender el contexto, de modo que las decisiones se tomen desde un lugar de evidencia en lugar de suposición.</p>
+          </div>
+          
+          <div class="card_extra" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+            <h1 data-es="CONSTRUIR" data-en="BUILD">CONSTRUIR</h1>
+            <div class="circle">
+              <img src="img/build.png" alt="">
+            </div> 
+            <p data-es="Reunimos a los especialistas digitales adecuados en los momentos adecuados para adaptarse a los desafíos únicos de tu proyecto." data-en="We bring together the right digital specialists at the right moments to suit the unique challenges of your project.">Reunimos a los especialistas digitales adecuados en los momentos adecuados para adaptarse a los desafíos únicos de tu proyecto.</p>
+          </div>
+          
+          <div class="card_extra" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+            <h1 data-es="CRECER" data-en="GROW">CRECER</h1>
+            <div class="circle">
+              <img src="img/grow.png" alt="">
+            </div>
+            <p data-es="Nuestros equipos trabajan estrechamente para garantizar que tus activos digitales continúen evolucionando y brinden un retorno de inversión." data-en="Our teams work closely together to ensure your digital assets continue to evolve and deliver a return on your investment.">Nuestros equipos trabajan estrechamente para garantizar que tus activos digitales continúen evolucionando y brinden un retorno de inversión.</p>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="text_form" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+          <h1 data-es="Permanece en contacto" data-en="Keep in Touch">Permanece en contacto</h1>
+          <p data-es="Cuéntanos más sobre tu idea para que podamos ayudarte y proporcionarte una lista detallada de tareas y objetivos que ofrecemos para impulsar tu negocio." data-en="Tell us more about your idea so we can assist you and provide you with a detailed list of tasks and goals we offer to advance your business.">Cuéntanos más sobre tu idea para que podamos ayudarte y proporcionarte una lista detallada de tareas y objetivos que ofrecemos para impulsar tu negocio.</p>
+        </div>     
+
+        <div class="formularioDiv">
+          <div class="formulario_container">
+            <form class="formulario" action="https://formspree.io/f/xayggnda" method="POST" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+              <label for="nombre" class="required" data-es="Nombre:" data-en="Name:">Nombre:</label>
+              <input type="text" id="nombre" required>
+              
+              <label for="email" class="required" data-es="Correo electrónico:" data-en="Mail:">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="telefono" data-es="Número de teléfono:" data-en="Phone Number:">Número de teléfono:</label>
+              <input type="tel" id="telefono">
+              
+              <label for="mensaje" class="required" data-es="Mensaje:" data-en="Message:">Mensaje:</label>
+              <textarea id="mensaje" rows="4" name="message" required></textarea>
+              
+              <p class="nota" data-es="* Campos obligatorios" data-en="* Required Fields">* Campos obligatorios</p>
+            
+              <button type="submit" data-es="Enviar" data-en="Send">Enviar</button>
+            </form>            
+          </div>
+        </div>
+      </section>
+
+      <section class="footer" id="socialmedia">
+        <div class="footerUno">
+          <img src="img/logo.png" alt="home-logo" />
+          <h1>Fusionar <span>iT</span></h1>
+          <div class="socialMedia">
+            <a href="https://www.instagram.com/fusionarit/" target="_blank"><img src="img/instagram.png" alt=""></a>
+          </div>
+          <div class="socialMedia">
+            <a href="https://www.linkedin.com/company/fusionar-it/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+          </div>
+          <div class="socialMedia">
+            <a href="mailto:contacto@fusionarit.com.ar">
+              <img src="img/mail.png" alt="Enviar correo">
+            </a>
+          </div>
+        </div>
+
+        <div class="footerDos">
+          <p><a href="#home" data-es="Inicio" data-en="Home">Inicio</a></p>
+          <p><a href="#services" data-es="Servicios" data-en="Services">Servicios</a></p>
+          <p><a href="#whyus" data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</a></p>
+          <p><a href="#objective" data-es="Objetivos" data-en="Objectives">Objetivos</a></p>
+          <p><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></p>          
+        </div>        
+
+        <div class="footerTres">
+          <span data-es="Derechos de autor 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT" data-en="Copyright 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT">Derechos de autor 2023&nbsp;&nbsp; &copy; &nbsp;&nbsp; FUSIONAR IT</span>
+        </div>        
+          
+      </section>
+      <!--<section class="about-us">
+        <div class="about-us-container-general">
+          <h1 class="main-title-section">Nosotros</h1>
+          <p class="subtitle-about-us"></p>
+        </div>
+        <div>
+          <div class="container-first-person"></div>
+          <div class="container-second-person"></div>
+          <div class="container-third-person"></div>
+        </div>
+      </section>-->
+
+      <!--<section class="projects">
+        <h1 class="main-title-section">Proyectos</h1>
+        <p class="subtitle-projects"></p>
+        <div class="container-carousel-projects"></div>
+      </section>-->
+
+
+      <!--<section class="contact">
+        <h1 class="main-title-section">Contacto</h1>
+        <p class="subtitle-contact"></p>
+        <div>
+          <div class="logo-contacto"></div>
+          <div class="form-contacto">
+            <form action="">
+              <input type="text" name="first-name" id="" placeholder="Nombre" />
+              <input type="text" name="email" id="" placeholder="Email" />
+              <input
+                type="text"
+                name="comment"
+                id=""
+                placeholder="Contanos que tenes en mente!"
+              />
+            </form>
+          </div>
+        </div>
+      </section>-->
+
+  <!-- GSAP SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js" integrity="sha512-+35N1KBHwTDnFOBSqO2nm/qsf5okaS74sUZu/rT/wlvuAfJ1hrAoGlWZip2l1LHB1q2i8B2k84Pb/NrC38bv8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- animate css -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- our script -->
+  <script defer src="main.js"></script>
+
+  <!-- gsap animation -->
+  <script defer src="gsap-index.js"></script>
+
+  <!-- swup 
+  <script src="https://unpkg.com/swup@4"></script>
+  <script>
+    const swup = new Swup();
+  </script>
+  -->
+
+</body>
+</html>
